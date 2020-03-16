@@ -15,5 +15,5 @@ rule get_fastq_pe:
         # optional extra arguments
         extra=""
     wrapper:
-        "https://github.com/tpall/snakemake-wrappers/raw/0.49.0/bio/sra-tools/fasterq-dump"
+        "https://raw.githubusercontent.com/tpall/snakemake-wrappers/bug/snakemake_issue145/bio/sra-tools/fasterq-dump"
 
