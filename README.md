@@ -25,10 +25,10 @@ Test run:
 snakemake --use-conda -n
 ```
 
-Download sequencing runs listed in *SraRunTable.txt*:
+Download sequencing runs listed in *SraRunTable.txt*, e.g. in slurm cluster:
 
 ```bash
-snakemake --use-conda -j
+snakemake --use-conda --cluster "sbatch -p main --mem 2000 -t 60" -j
 ```
 
 For all possible snakemake command line options please refer to snakemake tutorial <https://snakemake.readthedocs.io/en/stable/executing/cli.html>.
